@@ -7,20 +7,20 @@ class AstIndexAv < Formula
   on_macos do
     if Hardware::CPU.arm?
       url "https://github.com/AndVl1/Claude-ast-index-search/releases/download/v3.40.4-av.1/ast-index-av-v3.40.4-av.1-darwin-arm64.tar.gz"
-      sha256 "ec13e2eac4a14c4b586d8de4b08ea2d52795b1580bf1eb683caa85a6926bea8b"
+      sha256 "e91391b8d564a0e5c02a87fd08378c0ff92038108f6fa64f06e1ed4c8d416b20"
     else
       url "https://github.com/AndVl1/Claude-ast-index-search/releases/download/v3.40.4-av.1/ast-index-av-v3.40.4-av.1-darwin-x86_64.tar.gz"
-      sha256 "e0b0db670c9f9c2e89323cd7025a2c04b8109d04f36bd284bb07c610d0cb3807"
+      sha256 "61a787d30ec526dc1dd20b3a03ef73baeb318ba82481cfd901ac1892bfe56b36"
     end
   end
 
   on_linux do
     if Hardware::CPU.arm?
       url "https://github.com/AndVl1/Claude-ast-index-search/releases/download/v3.40.4-av.1/ast-index-av-v3.40.4-av.1-linux-arm64.tar.gz"
-      sha256 "853b3aef1ee04b28dcaa9c020321e7b2d890a8cfb3e8b41def2ac17a3205d4a2"
+      sha256 "fdeded027722ee3ee153468189d72643c29829f61c3557cc5d91d5b11fe19c05"
     else
       url "https://github.com/AndVl1/Claude-ast-index-search/releases/download/v3.40.4-av.1/ast-index-av-v3.40.4-av.1-linux-x86_64.tar.gz"
-      sha256 "53ce95e3fbb9edd01fa577eadc593ab19b1ce96e557bfa9313bf40a805b70beb"
+      sha256 "654320ff159eaa8e005f1c4f4305f346ed07d2a3913865da0f63feed41cd6352"
     end
   end
 
