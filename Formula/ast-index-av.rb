@@ -2,25 +2,25 @@ class AstIndexAv < Formula
   desc "ast-index fork (AndVl1) — fast code search CLI with experimental features"
   homepage "https://github.com/AndVl1/Claude-ast-index-search"
   license "MIT"
-  version "3.40.4-av.5"
+  version "3.40.4-av.6"
 
   on_macos do
     if Hardware::CPU.arm?
-      url "https://github.com/AndVl1/Claude-ast-index-search/releases/download/v3.40.4-av.5/ast-index-av-v3.40.4-av.5-darwin-arm64.tar.gz"
-      sha256 "caf7d925a6489dbd3d39a82d1eb1804b47bc08925a51a171ba5c94c9478560d7"
+      url "https://github.com/AndVl1/Claude-ast-index-search/releases/download/v3.40.4-av.6/ast-index-av-v3.40.4-av.6-darwin-arm64.tar.gz"
+      sha256 "e77c36a2e4348c1fe1075ddc4b0eaa827ae67e76b51687f64ecfa43e079c4983"
     else
-      url "https://github.com/AndVl1/Claude-ast-index-search/releases/download/v3.40.4-av.5/ast-index-av-v3.40.4-av.5-darwin-x86_64.tar.gz"
-      sha256 "b31cf2a4105a4116ee14c585931b9abe0db897582fb9cbdbaa227f6ea0c8e4c4"
+      url "https://github.com/AndVl1/Claude-ast-index-search/releases/download/v3.40.4-av.6/ast-index-av-v3.40.4-av.6-darwin-x86_64.tar.gz"
+      sha256 "dc60b3fd711140b275d366780fba685e1b70a8ea54c81bc3553dfc7360ec2b6b"
     end
   end
 
   on_linux do
     if Hardware::CPU.arm?
-      url "https://github.com/AndVl1/Claude-ast-index-search/releases/download/v3.40.4-av.5/ast-index-av-v3.40.4-av.5-linux-arm64.tar.gz"
-      sha256 "b599735bde48c378ee3d64f0964bef1bee61abf2ca984bf31e4dbdbee50f5935"
+      url "https://github.com/AndVl1/Claude-ast-index-search/releases/download/v3.40.4-av.6/ast-index-av-v3.40.4-av.6-linux-arm64.tar.gz"
+      sha256 "0a66350952d7e0d5c15395e160ab9565cb6f7fa79b449b0f8e91d5cf8f37306e"
     else
-      url "https://github.com/AndVl1/Claude-ast-index-search/releases/download/v3.40.4-av.5/ast-index-av-v3.40.4-av.5-linux-x86_64.tar.gz"
-      sha256 "519d9f764efbae36be65483ed000d4cb509ccb7e757bbaa1bf891540f9ab2dfe"
+      url "https://github.com/AndVl1/Claude-ast-index-search/releases/download/v3.40.4-av.6/ast-index-av-v3.40.4-av.6-linux-x86_64.tar.gz"
+      sha256 "edb9ebd87531682a5b99c95d9e863bf5e182ca2bba41a547421c4f9dd626916d"
     end
   end
 
