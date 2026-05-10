@@ -2,25 +2,25 @@ class AstIndexAv < Formula
   desc "ast-index fork (AndVl1) — fast code search CLI with experimental features"
   homepage "https://github.com/AndVl1/Claude-ast-index-search"
   license "MIT"
-  version "3.40.4-av.7"
+  version "3.40.4-av.8"
 
   on_macos do
     if Hardware::CPU.arm?
-      url "https://github.com/AndVl1/Claude-ast-index-search/releases/download/v3.40.4-av.7/ast-index-av-v3.40.4-av.7-darwin-arm64.tar.gz"
-      sha256 "d10cbe09397f13f2bdb9af3f3b10a79de353722609b417f94cf45202f1ea378d"
+      url "https://github.com/AndVl1/Claude-ast-index-search/releases/download/v3.40.4-av.8/ast-index-av-v3.40.4-av.8-darwin-arm64.tar.gz"
+      sha256 "8a8a0f5bbf223d209ad276a8da6e104e39d12d9fdea46f9f6d1abadd951054fc"
     else
-      url "https://github.com/AndVl1/Claude-ast-index-search/releases/download/v3.40.4-av.7/ast-index-av-v3.40.4-av.7-darwin-x86_64.tar.gz"
-      sha256 "e7a6fad4ff52c307fbbc494bc2225cf351a5ae1f7e51d0d57c3c1da4626771ac"
+      url "https://github.com/AndVl1/Claude-ast-index-search/releases/download/v3.40.4-av.8/ast-index-av-v3.40.4-av.8-darwin-x86_64.tar.gz"
+      sha256 "06258b37ab85d0426ef5c6e92790e03a80537a30478e0a10f0ccf22406d0ffbe"
     end
   end
 
   on_linux do
     if Hardware::CPU.arm?
-      url "https://github.com/AndVl1/Claude-ast-index-search/releases/download/v3.40.4-av.7/ast-index-av-v3.40.4-av.7-linux-arm64.tar.gz"
-      sha256 "60975bca2048fc1098842156701c2eb02a506565587871c733fc7e3c587d7070"
+      url "https://github.com/AndVl1/Claude-ast-index-search/releases/download/v3.40.4-av.8/ast-index-av-v3.40.4-av.8-linux-arm64.tar.gz"
+      sha256 "eeaeb5c633b68ea9b7ad07d14616b1caa2e8f07fc14c4526ab2b99b2a0290c79"
     else
-      url "https://github.com/AndVl1/Claude-ast-index-search/releases/download/v3.40.4-av.7/ast-index-av-v3.40.4-av.7-linux-x86_64.tar.gz"
-      sha256 "4e567592b1b213ec2baf6e0572cd1bba654bc60bd01786483d6362927a41d9e7"
+      url "https://github.com/AndVl1/Claude-ast-index-search/releases/download/v3.40.4-av.8/ast-index-av-v3.40.4-av.8-linux-x86_64.tar.gz"
+      sha256 "d182c1e64368c653fe7eb69f34d7a3a9dbb27500ba2c2ef7936ad03e454b0e6b"
     end
   end
 
