@@ -1,28 +1,28 @@
 class Gw < Formula
   desc "Gradle output filter for AI coding agents — strips noise, keeps errors/warnings/status"
   homepage "https://github.com/AndVl1/gw"
-  version "0.2.11"
+  version "0.2.12"
   license "MIT"
 
   on_macos do
     on_arm do
-      url "https://github.com/AndVl1/gw/releases/download/v0.2.11/gw-0.2.11-aarch64-apple-darwin.tar.gz"
-      sha256 "b38d13292b5dcd7e166cb683011b32908e464fd5d29bd46ef8ca569f30de038e"
+      url "https://github.com/AndVl1/gw/releases/download/v0.2.12/gw-0.2.12-aarch64-apple-darwin.tar.gz"
+      sha256 "3273f169227f0f670dc697d2139d9d3d71a672b691e9a94520bd655d3e61f588"
     end
     on_intel do
-      url "https://github.com/AndVl1/gw/releases/download/v0.2.11/gw-0.2.11-x86_64-apple-darwin.tar.gz"
-      sha256 "57d7a168336687ad2c8dff5dde42641e66ee11d1a93a78ca5aebfa6c402358f6"
+      url "https://github.com/AndVl1/gw/releases/download/v0.2.12/gw-0.2.12-x86_64-apple-darwin.tar.gz"
+      sha256 "4246f43f07cecc57b3aabfa6d06d6cb3d55635a608de569334065c27f5e45018"
     end
   end
 
   on_linux do
     on_arm do
-      url "https://github.com/AndVl1/gw/releases/download/v0.2.11/gw-0.2.11-aarch64-unknown-linux-gnu.tar.gz"
-      sha256 "1e1df57d829fa9eac2237c6bccac6a96d054e0e6b13ca15c3a8bcae24f004162"
+      url "https://github.com/AndVl1/gw/releases/download/v0.2.12/gw-0.2.12-aarch64-unknown-linux-gnu.tar.gz"
+      sha256 "e5436a005e7e641a538ce1e1ccc1bc8f1f44b53574ddfaeb9d169f0618cb8623"
     end
     on_intel do
-      url "https://github.com/AndVl1/gw/releases/download/v0.2.11/gw-0.2.11-x86_64-unknown-linux-gnu.tar.gz"
-      sha256 "13e1db11c8b9c46f66e3cafc9c397e8e4fff5129c2c6a8daca53945bfc457415"
+      url "https://github.com/AndVl1/gw/releases/download/v0.2.12/gw-0.2.12-x86_64-unknown-linux-gnu.tar.gz"
+      sha256 "ab446cf014ef9203ff9fd7c2ee1e96d94ca55d40ad40b6e71b8efcc49123b926"
     end
   end
 
