@@ -1,7 +1,7 @@
 class VisionAnalyze < Formula
   desc "CLI for visual screenshot analysis via llama.cpp"
   homepage "https://github.com/AndVl1/vision-analyze"
-  version "0.1.1"
+  version "0.1.2"
   license "MIT"
 
   # Requires llama.cpp with a vision-capable model at runtime.
@@ -9,28 +9,41 @@ class VisionAnalyze < Formula
 
   on_macos do
     on_arm do
-      url "https://github.com/AndVl1/vision-analyze/releases/download/v0.1.1/vision-analyze-0.1.1-aarch64-apple-darwin.tar.gz"
-      sha256 "5ab2da053f7a037cc546ec16a84abcf69d5ac927715aaf4e35acd1d0f51d8de2"
+      url "https://github.com/AndVl1/vision-analyze/releases/download/v0.1.2/vision-analyze-0.1.2-aarch64-apple-darwin.tar.gz"
+      sha256 "03bca923f6e7575946481a020e642dc7fe650c6efa1b3738039827a4977072d4"
     end
     on_intel do
-      url "https://github.com/AndVl1/vision-analyze/releases/download/v0.1.1/vision-analyze-0.1.1-x86_64-apple-darwin.tar.gz"
-      sha256 "8eface36514ab641d98e275773041819ae46aa58b39c096a5aea4499e43d2d40"
+      url "https://github.com/AndVl1/vision-analyze/releases/download/v0.1.2/vision-analyze-0.1.2-x86_64-apple-darwin.tar.gz"
+      sha256 "28567b8075f197f1ef69b768e6a7b2c4a8fdeb660a2c780262a0b53f5049c440"
     end
   end
 
   on_linux do
     on_arm do
-      url "https://github.com/AndVl1/vision-analyze/releases/download/v0.1.1/vision-analyze-0.1.1-aarch64-unknown-linux-gnu.tar.gz"
-      sha256 "accff4b4a07112ec89438effba08503baf8d573486054cf2305e6c8d7b7fc4e7"
+      url "https://github.com/AndVl1/vision-analyze/releases/download/v0.1.2/vision-analyze-0.1.2-aarch64-unknown-linux-gnu.tar.gz"
+      sha256 "185339f57da8b9c35c6958d27670dcd1eb129bd75384463dadbad0445a3f4262"
     end
     on_intel do
-      url "https://github.com/AndVl1/vision-analyze/releases/download/v0.1.1/vision-analyze-0.1.1-x86_64-unknown-linux-gnu.tar.gz"
-      sha256 "95a4d9201c0fec1a51f853fc7afed9b61d0c1742f1bedb70b56f0c8ebaeed842"
+      url "https://github.com/AndVl1/vision-analyze/releases/download/v0.1.2/vision-analyze-0.1.2-x86_64-unknown-linux-gnu.tar.gz"
+      sha256 "428ffe0eab453a888fcff0ab174e2887a837716ffb0cad404b307f382028782b"
     end
   end
 
   def install
     bin.install "vision-analyze"
+    (pkgshare/"presets").install Dir["presets/*"] if Dir.exist?("presets")
+  end
+
+  def caveats
+    <<~EOS
+      vision-analyze needs a llama.cpp backend at runtime:
+        brew install llama.cpp
+        llama-server -hf ggml-org/SmolVLM-256M-Instruct-GGUF -c 2048 --port 8080
+
+      Optional: Claude Code plugin with skill describing usage.
+        /plugin marketplace add AndVl1/claude-plugin
+        /plugin install vision-analyze@andvl1-plugins
+    EOS
   end
 
   test do
