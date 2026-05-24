@@ -1,7 +1,7 @@
 class VisionAnalyze < Formula
   desc "CLI for visual screenshot analysis via llama.cpp"
   homepage "https://github.com/AndVl1/vision-analyze"
-  version "0.1.0"
+  version "0.1.1"
   license "MIT"
 
   # Requires llama.cpp with a vision-capable model at runtime.
@@ -9,23 +9,23 @@ class VisionAnalyze < Formula
 
   on_macos do
     on_arm do
-      url "https://github.com/AndVl1/vision-analyze/releases/download/v0.1.0/vision-analyze-0.1.0-aarch64-apple-darwin.tar.gz"
-      sha256 "89b487a826b4fb71e2ee5d0ab4905742290061e6b28a038b4841062fa9d8aa1a"
+      url "https://github.com/AndVl1/vision-analyze/releases/download/v0.1.1/vision-analyze-0.1.1-aarch64-apple-darwin.tar.gz"
+      sha256 "5ab2da053f7a037cc546ec16a84abcf69d5ac927715aaf4e35acd1d0f51d8de2"
     end
     on_intel do
-      url "https://github.com/AndVl1/vision-analyze/releases/download/v0.1.0/vision-analyze-0.1.0-x86_64-apple-darwin.tar.gz"
-      sha256 "ffb4c2484bbc38d370787fc64f705857aed55dc98e055f899cba7ffbc99e6f3b"
+      url "https://github.com/AndVl1/vision-analyze/releases/download/v0.1.1/vision-analyze-0.1.1-x86_64-apple-darwin.tar.gz"
+      sha256 "8eface36514ab641d98e275773041819ae46aa58b39c096a5aea4499e43d2d40"
     end
   end
 
   on_linux do
     on_arm do
-      url "https://github.com/AndVl1/vision-analyze/releases/download/v0.1.0/vision-analyze-0.1.0-aarch64-unknown-linux-gnu.tar.gz"
-      sha256 "6b769cb995115f7e3558997953ca7ebd6ec9c13794e2e9a6a888c732615738be"
+      url "https://github.com/AndVl1/vision-analyze/releases/download/v0.1.1/vision-analyze-0.1.1-aarch64-unknown-linux-gnu.tar.gz"
+      sha256 "accff4b4a07112ec89438effba08503baf8d573486054cf2305e6c8d7b7fc4e7"
     end
     on_intel do
-      url "https://github.com/AndVl1/vision-analyze/releases/download/v0.1.0/vision-analyze-0.1.0-x86_64-unknown-linux-gnu.tar.gz"
-      sha256 "222457411e9561463a9c4755abc54bb95e7c181f197795ef09d757683d62c7b5"
+      url "https://github.com/AndVl1/vision-analyze/releases/download/v0.1.1/vision-analyze-0.1.1-x86_64-unknown-linux-gnu.tar.gz"
+      sha256 "95a4d9201c0fec1a51f853fc7afed9b61d0c1742f1bedb70b56f0c8ebaeed842"
     end
   end
 
